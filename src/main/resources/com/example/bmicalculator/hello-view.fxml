@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bmicalculator.HelloController">
+   <children>
+      <TextField fx:id="weightKilograms" layoutX="142.0" layoutY="33.0" promptText="Weight in kilograms" />
+      <TextField fx:id="heightCentimeter" layoutX="332.0" layoutY="33.0" promptText="Height in cm" />
+      <Button fx:id="calculateBmiButton" layoutX="546.0" layoutY="33.0" mnemonicParsing="false" onAction="#onCalculate" text="Calculate BMI" />
+      <TableView fx:id="bmiDetails" layoutX="184.0" layoutY="132.0" prefHeight="274.0" prefWidth="362.0">
+        <columns>
+          <TableColumn fx:id="weight" prefWidth="75.0" text="Weight" />
+          <TableColumn fx:id="height" prefWidth="75.0" text="Height" />
+            <TableColumn fx:id="calculatedBmi" prefWidth="106.0" text="Calculated BMI" />
+            <TableColumn fx:id="weightStatus" prefWidth="105.0" text="Weight Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
